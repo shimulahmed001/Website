@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<title>About</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+
+</style>
+</head>
+<body>
+
+   <ul class="menu">
+  <li class="list"><a href="../index.html" class="active">Home</a></li>
+  <li class="list"><a href="w3school.html">W3school</a></li>
+  <li class="list"><a href="contact.html">Contact</a></li>
+  <li class="list"><a href="about.html">About</a></li>
+    </ul>
+  
+
+<div class="about-section">
+  <h1 style="background-color:#474e5d;">About Us Page</h1>
+  <p>Some text about who we are and what we do.</p>
+  <p>Resize the browser window to see that this page is responsive by the way.</p>
+</div>
+
+<h2 style="text-align:center">Our Service</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="../images/hill.jpg" alt="Hill" style="width:93%">
+      <div class="container">
+        <h2>Hill</h2>
+        <p class="title">Beautiful Place</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>shimul@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="../images/dhaka.jpg" alt="Dhaka" style= "padding-left: 20%; width:70%" >
+      <div class="container">
+        <h2>Dhaka Road</h2>
+        <p class="title">Beautiful Road</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>dhaka@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="../images/beach.jpg" alt="Beach" style="width:93%">
+      <div class="container">
+        <h2>Beach</h2>
+        <p class="title">Beautiful Beach</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>beach@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
